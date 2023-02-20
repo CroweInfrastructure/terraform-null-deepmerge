@@ -18,7 +18,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -46,7 +46,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -74,7 +74,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -102,7 +102,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -130,7 +130,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -158,7 +158,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -186,7 +186,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -214,7 +214,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -242,7 +242,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -270,7 +270,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -298,7 +298,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -326,7 +326,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -354,7 +354,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -382,7 +382,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -410,7 +410,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -438,7 +438,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -466,7 +466,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -494,7 +494,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -522,7 +522,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -550,7 +550,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -578,7 +578,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -606,7 +606,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -634,7 +634,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -662,7 +662,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -690,7 +690,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -718,7 +718,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -746,7 +746,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -774,7 +774,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -802,7 +802,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -830,7 +830,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -858,7 +858,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -886,7 +886,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -914,7 +914,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -942,7 +942,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -970,7 +970,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -998,7 +998,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1026,7 +1026,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1054,7 +1054,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1082,7 +1082,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1110,7 +1110,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1138,7 +1138,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1166,7 +1166,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1194,7 +1194,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1222,7 +1222,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1250,7 +1250,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1278,7 +1278,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1306,7 +1306,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1334,7 +1334,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1362,7 +1362,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1390,7 +1390,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1418,7 +1418,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1446,7 +1446,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1474,7 +1474,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1502,7 +1502,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1530,7 +1530,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1558,7 +1558,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1586,7 +1586,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1614,7 +1614,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1642,7 +1642,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1670,7 +1670,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1698,7 +1698,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1726,7 +1726,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1754,7 +1754,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1782,7 +1782,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1810,7 +1810,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1838,7 +1838,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1866,7 +1866,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1894,7 +1894,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1922,7 +1922,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1950,7 +1950,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -1978,7 +1978,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2006,7 +2006,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2034,7 +2034,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2062,7 +2062,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2090,7 +2090,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2118,7 +2118,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2146,7 +2146,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2174,7 +2174,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2202,7 +2202,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2230,7 +2230,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2258,7 +2258,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2286,7 +2286,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2314,7 +2314,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2342,7 +2342,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2370,7 +2370,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2398,7 +2398,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2426,7 +2426,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2454,7 +2454,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2482,7 +2482,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2510,7 +2510,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2538,7 +2538,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2566,7 +2566,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2594,7 +2594,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2622,7 +2622,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2650,7 +2650,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2678,7 +2678,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2706,7 +2706,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2734,7 +2734,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2762,7 +2762,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2790,7 +2790,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
@@ -2818,7 +2818,7 @@ locals {
             path     = concat(item["path"], [key]),
             value    = item["value"][key],
             is_final = item["value"][key] == null || try(tolist(item["value"][key]), toset(item["value"][key]), tonumber(item["value"][key]), tobool(item["value"][key]), tostring(item["value"][key]), null) != null
-          }
+          } if item["value"] != null
         ]
       ]...)
       remaining = concat([], [
